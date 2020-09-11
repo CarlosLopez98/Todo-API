@@ -1,0 +1,31 @@
+{
+  "name": "Todo-API",
+  "version": "1.0.0",
+  "description": "API REST for a To Do App",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosLopez98/Todo-API.git"
+  },
+  "keywords": [],
+  "author": "Carlos Lopez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CarlosLopez98/Todo-API/issues"
+  },
+  "homepage": "https://github.com/CarlosLopez98/Todo-API#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-multiparty": "^2.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
