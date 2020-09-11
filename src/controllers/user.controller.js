@@ -2,7 +2,6 @@
 
 const user = require('../models/user.model');
 const bcrypt = require('bcryptjs');
-const secret_key = 'H01AMUND0123abc';
 
 var controller = {
 	getUsers: function(req, res) {
@@ -167,7 +166,7 @@ var controller = {
 		}else if(params.email != null){
 			// Auth con email
 			user.findOne({email: params.email}, (err, userFound) => {
-				if(err) return res.status(404).send({
+				if(err) return res.status(500).send({
 					message: 'Hubo un error en la autenticación.'
 				});
 

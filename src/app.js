@@ -7,6 +7,7 @@ const app = express();
 
 // cargar archivos de rutas
 const user_routes = require('./routes/user.route');
+const task_routes = require('./routes/task.route');
 
 // Middlewares
 app.use(bodyParser.urlencoded({extended: false}));
@@ -24,6 +25,7 @@ app.use((req, res, next) => {
 
 // rutas
 app.use('/api', user_routes);
+app.use('/api', task_routes);
 
 // exportar
 module.exports = app;
